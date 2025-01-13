@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .navbar {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+        }
+
+        .navdiv ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+        }
+
+        .navdiv ul li {
+            margin-right: 20px;
+        }
+
+        .navdiv ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .navdiv ul li a:hover {
+            color: #ffc107;
+        }
+
+        .kolegajpg {
+            width: 100%;
+            height: auto;
+            margin-top: 60px;
+        }
+
+        .teks1 {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #007bff;
+            margin-top: 40px;
+        }
+
+        .berita1, .berita2 {
+            display: flex;
+            margin: 20px auto;
+            max-width: 1000px;
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .berita1 img, .berita2 img {
+            width: 40%;
+            object-fit: cover;
+        }
+
+        .teksberita1, .teksberita2 {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .judulberita1, .judulberita2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .loreipsumberita1, .loreipsumberita2 {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .linkfullcontentberita1, .linkfullcontentberita2 {
+            text-decoration: none;
+            color: #007bff;
+            font-weight: bold;
+        }
+
+        .linkfullcontentberita1:hover, .linkfullcontentberita2:hover {
+            text-decoration: underline;
+        }
+
+        .footerCOntainer {
+            background-color: #007bff;
+            color: white;
+            padding: 20px 10px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .socialIcon a {
+            color: white;
+            margin: 0 10px;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+
+        .socialIcon a:hover {
+            transform: scale(1.2);
+        }
+
+        .alamat {
+            text-align: center;
+        }
+
+        .alamat p {
+            margin: 5px 0;
+        }
+
+        @media (max-width: 768px) {
+            .berita1, .berita2 {
+                flex-direction: column;
+            }
+
+            .berita1 img, .berita2 img {
+                width: 100%;
+            }
+
+            .footerCOntainer {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar"> 
+        <div class="navdiv">
+            <ul>
+                <li><a href="latcss.html">Beranda</a></li>
+                <li><a href="aboutUspage.html">Tentang Kami</a></li>
+            </ul>
+        </div> 
+    </nav>
+
+    <img src="kolega.jpg" alt="Kolega" class="kolegajpg">
+
+    <h1 class="teks1">Berita Terbaru</h1>
+
+    <div class="berita1">
+        <img src="thumbnailberita1.jpg" alt="Thumbnail Berita 1" class="thumbnailberita1">
+        <div class="teksberita1">
+            <h1 class="judulberita1">Penurunan Nilai Saham pada 2024</h1>
+            <p class="loreipsumberita1"> Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque eleifend phasellus ullamcorper risus nisl senectus. Integer curae netus taciti malesuada molestie cursus nam. </p>
+            <a href="latcss_slide 2.html" class="linkfullcontentberita1">Baca Selengkapnya</a>
+        </div>
+    </div>
+
+    <div class="berita2">
+        <img src="thumbnailberita2.jpg" alt="Thumbnail Berita 2" class="thumbnailberita2">
+        <div class="teksberita2">
+            <h1 class="judulberita2">Kenaikan Nilai Saham pada 2024</h1>
+            <p class="loreipsumberita2"> Lorem ipsum odor amet, consectetuer adipiscing elit. Natoque eleifend phasellus ullamcorper risus nisl senectus. Integer curae netus taciti malesuada molestie cursus nam. </p>
+            <a href="latcss_slide2_2.html" class="linkfullcontentberita2">Baca Selengkapnya</a>
+        </div>
+    </div>
+
+    <div class="footerCOntainer">
+        <div class="socialIcon">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+        <div class="alamat">
+            <p>Universitas Pembangunan Jaya</p>
+            <p>Blok B7/P, Jl. Cendrawasih Raya Bintaro Jaya, Sawah Baru, Kec. Ciputat, Kota Tangerang Selatan, Banten 15413</p>
+        </div>
+    </div>
+</body>
+</html>
